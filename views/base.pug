@@ -1,0 +1,19 @@
+block variables
+
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    title Floema
+
+    meta(name="description" content="Floema beatiful jewlery.")
+    link(rel="stylesheet" href="main.css")
+
+body
+    include ./partials/preloader.pug
+    include ./partials/navigation.pug
+
+    .content#content(data-template=template)
+        block content
